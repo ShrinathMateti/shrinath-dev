@@ -57,7 +57,7 @@ const ProjectCard = ({ project, isFullStack, onImageClick }) => (
       <img
         src={project.image}
         alt={project.name}
-        className="aspect-video overflow-hidden cursor-pointer block h-full object-fill"
+        className="aspect-video overflow-hidden cursor-pointer block w-full h-full object-fill"
       />
     </div>
 
@@ -118,13 +118,13 @@ const Projects = () => {
 
           {/* Image Container */}
           <div
-            className="max-w-5xl w-full px-4"
+            className="max-w-6xl w-full rounded-2xl overflow-hidden flex items-center justify-center px-2 md:px-4"
             onClick={(e) => e.stopPropagation()}
           >
             <img
               src={selectedImage}
               alt="Zoomed"
-              className="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl transform transition duration-300 scale-95 animate-zoomIn"
+              className="w-full h-[100dvh] md:h-[90vh] object-contain shadow-2xl animate-zoomIn"
             />
           </div>
 
@@ -134,7 +134,7 @@ const Projects = () => {
             onClick={() => setSelectedImage(null)}
           />
         </div>
-      )}      
+      )}
     </section>
   );
 };
