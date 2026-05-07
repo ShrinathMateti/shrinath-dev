@@ -57,7 +57,7 @@ const ProjectCard = ({ project, isFullStack, onImageClick }) => (
       <img
         src={project.image}
         alt={project.name}
-        className="aspect-video overflow-hidden cursor-pointer"
+        className="aspect-video overflow-hidden cursor-pointer block h-full object-fill"
       />
     </div>
 
