@@ -51,8 +51,8 @@ const fullstackProjects = [
 const ProjectCard = ({ project, isFullStack, onImageClick }) => (
   <div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl overflow-hidden shadow-md transition duration-300 hover:shadow-2xl hover:-translate-y-1">
     <div
-      className="h-56 overflow-hidden cursor-pointer bg-gray-800"
-      onClick={() => onImageClick(project.image)}
+      className="h-56 overflow-hidden md:cursor-pointer bg-gray-800"
+      onClick={() => window.innerWidth >= 768 && onImageClick(project.image)}
     >
       <img
         src={project.image}
@@ -118,13 +118,13 @@ const Projects = () => {
 
           {/* Image Container */}
           <div
-            className="max-w-6xl w-full rounded-2xl overflow-hidden flex items-center justify-center px-2 md:px-4"
+            className="max-w-6xl w-full flex items-center justify-center px-2 md:px-4"
             onClick={(e) => e.stopPropagation()}
           >
             <img
               src={selectedImage}
               alt="Zoomed"
-              className="w-full h-[100dvh] md:h-[90vh] object-contain shadow-2xl animate-zoomIn"
+              className="w-full h-auto max-h-[100dvh] md:max-h-[90vh] object-contain shadow-2xl animate-zoomIn"
             />
           </div>
 
