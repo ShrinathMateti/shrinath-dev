@@ -41,7 +41,7 @@ const Hero = () => {
         className="text-4xl md:text-5xl font-bold animate-fadeUp"
         style={{ animationDelay: "0.2s" }}
       >
-        I'm{" "}
+        Hi, I'm{" "}
         <span className="bg-gradient-to-r from-green-400 via-blue-500 to-green-500 bg-[length:200%] bg-clip-text text-transparent animate-gradient">
           <Typewriter
             words={["Shrinath Mateti"]}
