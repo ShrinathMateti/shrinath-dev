@@ -19,8 +19,8 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleScroll = () => {
-    document.getElementById("contact")?.scrollIntoView({
+  const handleScroll = (id) => {
+    document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
     });
   };
@@ -41,7 +41,7 @@ const Hero = () => {
         className="text-4xl md:text-5xl font-bold animate-fadeUp"
         style={{ animationDelay: "0.2s" }}
       >
-        Hi, I'm{" "}
+        &nbsp;Hi, I'm{" "}
         <span className="bg-gradient-to-r from-green-400 via-blue-500 to-green-500 bg-[length:200%] bg-clip-text text-transparent animate-gradient">
           <Typewriter
             words={["Shrinath Mateti"]}
@@ -83,18 +83,18 @@ const Hero = () => {
         style={{ animationDelay: "0.5s" }}
       >
         <button
-          onClick={handleScroll}
-          className="bg-gradient-to-r from-green-400 to-blue-500 px-5 py-2 rounded-full hover:scale-105 transition"
+          onClick={() => handleScroll("contact")}
+          className="inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-green-400 to-blue-500 px-5 text-sm font-medium leading-none transition hover:scale-105"
         >
           Contact Me
         </button>
 
-        <a
-          href="#projects"
-          className="bg-gradient-to-r from-pink-500 to-yellow-500 px-5 py-2 rounded-full hover:scale-105 transition"
+        <button
+          onClick={() => handleScroll("projects")}
+          className="inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 px-5 text-sm font-medium leading-none transition hover:scale-105"
         >
           View Projects
-        </a>
+        </button>
       </div>
     </section>
   );
