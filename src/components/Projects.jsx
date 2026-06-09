@@ -80,7 +80,6 @@ const ProjectCard = ({ project, isFullStack, onImageClick }) => (
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Prevent background scroll when modal is open
   useEffect(() => {
     document.body.style.overflow = selectedImage ? "hidden" : "auto";
   }, [selectedImage]);
