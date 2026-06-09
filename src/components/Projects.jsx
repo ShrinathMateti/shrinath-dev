@@ -20,7 +20,7 @@ const frontendProjects = [
     name: "Face Detector",
     technologies: "React",
     image: "face-detector.png",
-    liveDemo: "https://face-detector-brown.vercel.app/",
+    liveDemo: "https://jocasta-face-detector.vercel.app/",
   },
 ];
 
