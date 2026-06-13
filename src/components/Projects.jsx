@@ -45,7 +45,7 @@ const frontendProjects = [
   },
   {
     id: 5,
-    name: "Coffee Shop Site",
+    name: "Cafe Site",
     technologies: ["React", "Tailwind CSS"],
     image: "coffee.png",
     description:
