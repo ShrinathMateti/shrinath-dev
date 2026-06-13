@@ -50,16 +50,16 @@ const Services = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="group relative bg-slate-800/40 backdrop-blur-md border border-slate-700/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-slate-600 flex flex-col justify-between shadow-xl hover:shadow-[0_10px_30px_rgba(34,197,94,0.05)]"
+              className="group relative bg-slate-800/40 backdrop-blur-md border border-slate-700/50 p-8 rounded-2xl transition-all duration-300 md:hover:-translate-y-2 md:hover:border-slate-600 flex flex-col justify-between shadow-xl md:hover:shadow-[0_10px_30px_rgba(34,197,94,0.05)]"
             >
               <div>
-                {/* Icon Wrapper with subtle background pill */}
-                <div className="mb-6 inline-flex p-3 rounded-xl bg-slate-900/60 border border-slate-800 group-hover:scale-110 transition-transform duration-300">
+                {/* Icon Wrapper - Disabled mobile hover scale */}
+                <div className="mb-6 inline-flex p-3 rounded-xl bg-slate-900/60 border border-slate-800 md:group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
 
-                {/* Title */}
-                <h3 className="text-xl font-bold mb-3 text-slate-100 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-blue-400 transition-all duration-300">
+                {/* Title - Disabled mobile text-clip gradient animation */}
+                <h3 className="text-xl font-bold mb-3 text-slate-100 md:group-hover:text-transparent md:group-hover:bg-clip-text md:group-hover:bg-gradient-to-r md:group-hover:from-green-400 md:group-hover:to-blue-400 transition-all duration-300">
                   {service.title}
                 </h3>
 
@@ -69,13 +69,13 @@ const Services = () => {
                 </p>
               </div>
 
-              {/* Action Link (Smoothed Anchor Tag mapping to core contact link) */}
+              {/* Action Link - Disabled mobile green-to-blue text swap & arrow push */}
               <button
                 onClick={() => handleScroll("contact")}
-                className="mt-8 text-sm font-semibold inline-flex items-center gap-1 text-green-400 group-hover:text-blue-400 transition-colors w-fit group/btn"
+                className="mt-8 text-sm font-semibold inline-flex items-center gap-1 text-green-400 md:group-hover:text-blue-400 transition-colors w-fit group/btn"
               >
                 Let's Discuss
-                <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">
+                <span className="transform transition-transform duration-300 md:group-hover/btn:translate-x-1">
                   →
                 </span>
               </button>
