@@ -219,7 +219,7 @@ const About = () => {
               icon: <FaCode />,
             },
             {
-              value: "8+",
+              value: "10+",
               label: "Projects Completed",
               icon: <FaProjectDiagram />,
             },

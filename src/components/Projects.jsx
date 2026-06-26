@@ -63,6 +63,36 @@ const frontendProjects = [
     liveDemo: "https://hotelurbanstay.netlify.app/",
     tag: "Hospitality",
   },
+  {
+    id: 7,
+    name: "Music Player Site",
+    technologies: ["React", "Tailwind CSS", "Jamendo"],
+    image: "music-player.png",
+    description:
+      "A modern music streaming application with featured songs, playlist management and an integrated audio player powered by the Jamendo API.",
+    liveDemo: "https://arc-audio-player.vercel.app/",
+    tag: "Entertainment",
+  },
+  {
+    id: 8,
+    name: "Luxury Car Rental Site",
+    technologies: ["React", "Tailwind CSS"],
+    image: "car-rental.png",
+    description:
+      "A modern car rental experience built around a luxury showroom feel rather than a typical rental-counter interface. Features a curated fleet showcase and a streamlined booking flow.",
+    liveDemo: "https://lux-drive-rental.vercel.app/",
+    tag: "Transportation",
+  },
+  {
+    id: 9,
+    name: "Trekking Site",
+    technologies: ["React", "Tailwind CSS"],
+    image: "trekking.png",
+    description:
+      "An adventure-focused trekking website featuring destination guides, trekking packages, scenic galleries, and an easy booking interface for outdoor enthusiasts.",
+    liveDemo: "https://himavan-expeditions.vercel.app/",
+    tag: "Travel",
+  },
 ];
 
 const fullstackProjects = [
@@ -119,7 +149,7 @@ const ProjectCard = ({ project, onImageClick }) => {
           className="w-full h-full object-fill transition-transform duration-500 md:group-hover:scale-103"
           style={{ objectPosition: "top center" }}
         />
-        
+
         <div className="absolute inset-0 hidden md:flex opacity-0 group-hover:opacity-100 transition-opacity duration-300 items-center justify-center bg-black/45">
           <span className="text-[0.72rem] tracking-[0.14em] uppercase text-white bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20">
             Preview
