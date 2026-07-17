@@ -251,8 +251,9 @@ const Projects = () => {
             {filters.map((f) => (
               <button
                 key={f}
+                type="button" // 1. Prevents default form submit behavior
                 onClick={() => setFilter(f)}
-                className={`px-4 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                className={`px-4 py-1.5 rounded-lg text-xs font-medium cursor-pointer touch-manipulation select-none transition-all ${
                   filter === f
                     ? "bg-gradient-to-r from-green-400 to-blue-500 text-white shadow-md"
                     : "text-slate-400 hover:text-slate-200"
