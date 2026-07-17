@@ -97,7 +97,7 @@ const frontendProjects = [
 
 const fullstackProjects = [
   {
-    id: 7,
+    id: 1,
     name: "Full-Stack Blog Site",
     technologies: ["React", "Bootstrap", "Spring Boot", "PostgreSQL"],
     image: "blogsite.png",
@@ -107,7 +107,7 @@ const fullstackProjects = [
     tag: "Full-Stack",
   },
   {
-    id: 8,
+    id: 2,
     name: "Library Management System",
     technologies: ["React", "Bootstrap", "Spring Boot", "PostgreSQL"],
     image: "librarymanager.png",
@@ -117,7 +117,7 @@ const fullstackProjects = [
     tag: "Full-Stack",
   },
   {
-    id: 9,
+    id: 3,
     name: "E-Commerce Site",
     technologies: ["React", "Tailwind", "Spring Boot", "PostgreSQL"],
     image: "shophaven.png",
