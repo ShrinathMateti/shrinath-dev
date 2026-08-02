@@ -45,6 +45,16 @@ const frontendProjects = [
   },
   {
     id: 5,
+    name: "Dry Fruits Site",
+    technologies: ["Next.js", "Tailwind CSS"],
+    image: "dry-fruit.png",
+    description:
+      "Discover a premium collection of freshly sourced nuts, seeds, and dried fruits, packed with natural flavor and wholesome nutrition.",
+    liveDemo: "https://bharat-dry-fruits.vercel.app/",
+    tag: "Retail",
+  },
+  {
+    id: 6,
     name: "Cafe Site",
     technologies: ["React", "Tailwind CSS"],
     image: "coffee.png",
@@ -54,7 +64,7 @@ const frontendProjects = [
     tag: "Retail",
   },
   {
-    id: 6,
+    id: 7,
     name: "Hotel Booking Site",
     technologies: ["React", "Tailwind CSS"],
     image: "hotel.png",
@@ -64,7 +74,17 @@ const frontendProjects = [
     tag: "Hospitality",
   },
   {
-    id: 7,
+    id: 8,
+    name: "Textiles Site",
+    technologies: ["Next.js", "ShadCN UI", "Tailwind CSS"],
+    image: "solapur-textiles.png",
+    description:
+      "Explore exclusive range of high-quality textiles, blending traditional craftsmanship with modern, sustainable innovation.",
+    liveDemo: "https://solapuri-textiles.vercel.app/",
+    tag: "Textiles",
+  },
+  {
+    id: 9,
     name: "Music Player Site",
     technologies: ["React", "Tailwind CSS", "Jamendo"],
     image: "music-player.png",
@@ -74,7 +94,7 @@ const frontendProjects = [
     tag: "Entertainment",
   },
   {
-    id: 8,
+    id: 10,
     name: "Luxury Car Rental Site",
     technologies: ["React", "Tailwind CSS"],
     image: "car-rental.png",
@@ -84,7 +104,17 @@ const frontendProjects = [
     tag: "Transportation",
   },
   {
-    id: 9,
+    id: 11,
+    name: "Interior Design Site",
+    technologies: ["React", "Tailwind CSS"],
+    image: "interiors.png",
+    description:
+      "Crafting warm, inviting interiors that look magazine-ready while truly feeling like home. The signature approach blends everyday comfort with effortless style.",
+    liveDemo: "https://luxespace-interior.netlify.app/",
+    tag: "Design",
+  },
+  {
+    id: 12,
     name: "Trekking Site",
     technologies: ["React", "Tailwind CSS"],
     image: "trekking.png",
